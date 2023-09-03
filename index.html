@@ -65,13 +65,31 @@ h4 {font-family:"Times New Roman", Times, serif;color:black}
     <p> <span style = "font-size: 20px"> The ChemSense lab aims to address detection challenges related to sensitivity, selectivity, portability, and availability in environmental preservation and human health. We strive to accomplish this by developing cutting-edge chemical sensing devices and chemical analysis methods.</p>
 
 	<div class="center" style="max-width:90%" align="middle">
-	<img class="mySlides" src="slide_show_figures\1.png" style="width:95%">
+	<img class="mySlides" src="slide_show_figures\Picture1.png" style="width:95%">
+	<img class="mySlides" src="slide_show_figures\Picture2.png" style="width:95%">
+	<img class="mySlides" src="slide_show_figures\Picture3.png" style="width:95%">
 	
 	</div>
 
-		<br />
+	<script>
+		var myIndex = 0;
+		carousel();
 
-	
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 5000); // Change image every 2 seconds
+		}
+		</script>
+
+		<br /><br /><br /><br />
+
 		<h2> News and Highlights </h2>
 		
 		<ul>
@@ -82,7 +100,7 @@ h4 {font-family:"Times New Roman", Times, serif;color:black}
 		
 		 <li>07/17/2023:  Dr. Wang gave a talk at the Crystal Summer School on Sensors and Chemical Sensors organized by <a href="https://chemistry.fau.edu/directory/vmerk.php">Dr. Vivian Merk</a>.</li><br />
 		 <div class="center" style="max-width:90%" align="middle">
-	     <img class="mySlides" src="slide_show_figures\summer school.jpg" style="width:60%"><br />
+	     <img class="mySlide" src="slide_show_figures\summer school.jpg" style="width:60%"><br />
 		 </ul>
 		  <br />
 		 <li>07/14/2023: Ph.D. student Md Dulal Hossain Khan joined our group.</li> <br />
@@ -90,7 +108,7 @@ h4 {font-family:"Times New Roman", Times, serif;color:black}
 		 <li>03/15/2023: Dr. Wang (PI) and <a href="https://www.cse.fau.edu/~xqzhu/index.html">Dr. Xingquan (Hill) Zhu</a> (Co-PI) received funding from the Jumpstart Postdoctoral Program for a new multi-disciplinary research initiative.</li>	 <br />
 		 <li>10/17/2022: Dr. Renjie Wang officially joined the Department of Chemistry and Biochemistry at Florida Atlantic University as an assistant professor.</li>	
 		 <div class="center" style="max-width:90%" align="middle">
-	<img class="mySlides" src="slide_show_figures\ChemSense lab logo.jpg" style="width:95%">
+	<img class="mySlide" src="slide_show_figures\ChemSense lab logo.jpg" style="width:95%">
 		 
 		</ul>
   </div>
